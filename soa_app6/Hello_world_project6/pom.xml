@@ -101,7 +101,7 @@
         <artifactId>ojdeploy</artifactId>
         <version>12.2.1-3-0</version>
         <configuration>
-          <ojdeploy>${oracleHome}/jdeveloper/jdev/bin/ojdeploy.exe</ojdeploy>
+          <ojdeploy>C:\Oracle\Middleware\Oracle_Home\jdeveloper\jdev\bin\ojdeploy.exe</ojdeploy>
           <workspace>${basedir}/../soa_app6.jws</workspace>
           <project>Hello_world_project6</project>
           <profile>Hello_world_project6</profile>
