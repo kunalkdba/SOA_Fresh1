@@ -46,6 +46,7 @@
     <forceDefault>true</forceDefault>
     <regenerateRulebase>false</regenerateRulebase>
     <keepInstancesOnRedeploy>false</keepInstancesOnRedeploy>
+     <skipTests>true</skipTests>
     <!-- these parameters are used by the test goal -->
     <!-- if you are using the sca-test (test) goal, you need to uncomment the following
              line and point it to your jndi.properties file. -->
@@ -74,6 +75,7 @@
           <compositeRevision>${composite.revision}</compositeRevision>
           <revision>${composite.revision}</revision>
           <scacInputDir>${scac.input.dir}</scacInputDir>
+          <skipITs>${skipTests}</skipITs>
           <!-- Uncomment the appHome property if your composite 
                          depends on MDS. -->
           <!--<appHome>${project.basedir}/..</appHome>-->
