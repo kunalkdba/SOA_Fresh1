@@ -66,6 +66,7 @@
         <artifactId>oracle-soa-plugin</artifactId>
         <version>12.2.1-3-0</version>
         <configuration>
+          <skipTests>true</skipTests>
           <compositeName>Hello_world_project6</compositeName>
           <composite>${scac.input}</composite>
           <sarLocation>${scac.output.dir}/sca_${project.artifactId}_rev${project.version}.jar</sarLocation>
