@@ -73,7 +73,7 @@
           <!-- note: compositeRevision is needed to package, revision is needed to undeploy -->
           <compositeRevision>${composite.revision}</compositeRevision>
           <revision>${composite.revision}</revision>
-          <scacInputDir>${scac.input.dir}</scacInputDir>
+         <!-- <scacInputDir>${scac.input.dir}</scacInputDir> -->
           <!-- Uncomment the appHome property if your composite 
                          depends on MDS. -->
           <!--<appHome>${project.basedir}/..</appHome>-->
