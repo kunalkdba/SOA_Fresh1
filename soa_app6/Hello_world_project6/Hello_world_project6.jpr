@@ -203,6 +203,14 @@
          <string v=".xml"/>
          <string v=".exm"/>
          <string v=".xml"/>
+         <string v=".exm"/>
+         <string v=".xml"/>
+         <string v=".exm"/>
+         <string v=".xml"/>
+         <string v=".exm"/>
+         <string v=".xml"/>
+         <string v=".exm"/>
+         <string v=".xml"/>
       </list>
       <list n="excludedUrls">
          <string v="fXSLNonDeployedFiles"/>
