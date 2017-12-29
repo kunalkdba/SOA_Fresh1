@@ -62,45 +62,6 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>com.oracle.soa.plugin</groupId>
-        <artifactId>oracle-soa-plugin</artifactId>
-        <version>12.2.1-3-0</version>
-        <configuration>
-          <compositeName>
-            Hello_world_project6
-          </compositeName>
-          <composite>${scac.input}</composite>
-          <sarLocation>${scac.output.dir}/sca_${project.artifactId}_rev${project.version}.jar</sarLocation>
-          <serverUrl>${serverUrl}</serverUrl>
-          <!-- note: compositeRevision is needed to package, revision is needed to undeploy -->
-          <compositeRevision>${composite.revision}</compositeRevision>
-          <revision>${composite.revision}</revision>
-          <test>
-            false
-          </test>
-          <!-- Uncomment the appHome property if your composite 
-                         depends on MDS. -->
-          <!--<appHome>${project.basedir}/..</appHome>-->
-          <!--  If you have a composite which contains a component that 
-                          depends on MDS (eg. Human Task, Business Rule) AND you 
-                          want to use a file-based MDS repository, then you 
-                          need to do either:
-                          1. update the .adf/META-INF/adf-config.xml to point to
-                             the correct location of the file based repository, i.e.
-                             remove the reference to ${soa.oracle.home} in that file, or
-                          2. define oracleHome and soaOracleHome here and leave the adf-config.xml file
-                             as is.  Note that the correct value for soaOracleHome is the path to 
-                             your SOA Quickstart or JDeveloper install directory, 
-                             with "/soa" appended to it.
-                    -->
-          <!--<oracleHome>JDEV_HOME</oracleHome>-->
-          <!--<soaOracleHome>JDEV_HOME/soa</soaOracleHome>-->
-         <!-- <input>${input}</input> -->
-        </configuration>
-        <!-- extensions=true is needed to use the custom sar packaging type -->
-        <extensions>true</extensions>
-      </plugin>
-      <plugin>
         <groupId>com.oracle.adf.plugin</groupId>
         <artifactId>ojdeploy</artifactId>
         <version>12.2.1-3-0</version>
@@ -119,6 +80,11 @@
             </goals>
           </execution>
         </executions>
+      </plugin>
+      <plugin>
+        <groupId>com.oracle.soa.plugin</groupId>
+        <artifactId>oracle-soa-plugin</artifactId>
+        <version>12.2.1-0-0</version>
       </plugin>
     </plugins>
   </build>
