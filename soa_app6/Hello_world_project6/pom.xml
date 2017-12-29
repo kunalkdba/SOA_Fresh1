@@ -116,5 +116,14 @@
         </executions>
       </plugin>
     </plugins>
+    <testSourceDirectory>../Project1/src/</testSourceDirectory>
+    <testResources>
+      <testResource>
+        <directory>../Project1/</directory>
+        <includes>
+          <include>*</include>
+        </includes>
+      </testResource>
+    </testResources>
   </build>
 </project>
