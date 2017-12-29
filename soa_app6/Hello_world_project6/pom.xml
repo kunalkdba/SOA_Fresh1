@@ -73,9 +73,6 @@
           <!-- note: compositeRevision is needed to package, revision is needed to undeploy -->
           <compositeRevision>${composite.revision}</compositeRevision>
           <revision>${composite.revision}</revision>
-          <Dsoa.test.skip>
-            true
-          </Dsoa.test.skip>
           <!-- Uncomment the appHome property if your composite 
                          depends on MDS. -->
           <!--<appHome>${project.basedir}/..</appHome>-->
