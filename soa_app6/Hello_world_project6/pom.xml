@@ -131,7 +131,7 @@
    <distributionManagement>
   	<repository>
   		<id>maven-repository</id>
-  		<url>${github.maven.repository}</url>
+  		<url>file://c:/Users/kukishor/.m2/repository</url>
   	</repository>
   </distributionManagement>
   
