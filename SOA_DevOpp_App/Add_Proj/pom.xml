@@ -117,9 +117,9 @@
         </executions>
       </plugin>
     <plugin>
-    <groupId>com.smartbear.soapui</groupId>
-    <artifactId>soapui-maven-plugin</artifactId>
-    <version>4.6.1</version>
+    <groupId>com.github.redfish4ktc.soapui</groupId>
+    <artifactId>soapui-maven-extension-plugin</artifactId>
+    <version>4.6.4.1</version>
     <configuration>
          <projectFile>D:\DevOps\SOA\SoapUI-5.4.0\Projects\SOA-DevOps-Add-Proj-soapui-project.xml</projectFile>
          <junitreport>true</junitreport>
