@@ -125,7 +125,7 @@
     <plugin>
     <groupId>com.smartbear.soapui</groupId>
     <artifactId>soapui-maven-plugin</artifactId>
-    <version>5.4.0</version>
+    <version>5.2.0</version>
     <configuration>
          <projectFile>D:\DevOps\SOA\SoapUI-5.4.0\Projects\SOA-DevOps-Add-Proj-soapui-project.xml</projectFile>
          <junitreport>true</junitreport>
