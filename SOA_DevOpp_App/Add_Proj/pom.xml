@@ -125,7 +125,7 @@
     <plugin>
     <groupId>com.smartbear.soapui</groupId>
     <artifactId>soapui-maven-plugin</artifactId>
-    <version>4.6.1</version>
+    <version>5.4.0</version>
     <configuration>
          <projectFile>D:\DevOps\SOA\SoapUI-5.4.0\Projects\SOA-DevOps-Add-Proj-soapui-project.xml</projectFile>
          <junitreport>true</junitreport>
@@ -133,7 +133,7 @@
      </configuration>
     <executions>
         <execution>
-            <phase>verify</phase>
+            <phase>pre-integration-test</phase>
             <goals>
               <goal>test</goal>
             </goals>
