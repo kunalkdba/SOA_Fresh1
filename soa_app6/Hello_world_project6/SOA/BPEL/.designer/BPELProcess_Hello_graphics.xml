@@ -6,7 +6,7 @@
    <partnerlink_locations>
       <partnerlink name="bpelprocess_hello_client" x="0" y="189" side="left"/>
    </partnerlink_locations>
-   <graph_layout viewport="0,0,1121,528" show_swimlanes="true">
+   <graph_layout viewport="0,0,1121,520" show_swimlanes="true">
       <layout_item collapsed="false" xpath="/process" type="process" showhandlers="true"/>
       <layout_item collapsed="false" xpath="/process/sequence" type="sequence"/>
    </graph_layout>

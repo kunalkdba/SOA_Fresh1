@@ -71,7 +71,7 @@
     <receive name="receiveInput" partnerLink="bpelprocess_hello_client" portType="client:BPELProcess_Hello" operation="process" variable="inputVariable" createInstance="yes"/>
     <assign name="Assign1">
       <copy>
-        <from>concat($inputVariable.payload/client:input,'Welcome Dear')</from>
+        <from>concat($inputVariable.payload/client:input,'Welcome Here')</from>
         <to expressionLanguage="urn:oasis:names:tc:wsbpel:2.0:sublang:xpath1.0">$outputVariable.payload/client:result</to>
       </copy>
     </assign>
