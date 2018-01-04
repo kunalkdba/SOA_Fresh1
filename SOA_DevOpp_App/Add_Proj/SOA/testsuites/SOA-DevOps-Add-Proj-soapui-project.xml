@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="c347d711-17b7-4c45-b7e5-504950c72a69" activeEnvironment="Default" name="SOA_DevOps_Add_Proj" resourceRoot="" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="ab3a9dfb-aaf3-4860-8dd0-5343716e09f3" wsaVersion="NONE" name="BPELProcess1Binding" type="wsdl" bindingName="{http://xmlns.oracle.com/SOA_DevOpp_App/Add_Proj/BPELProcess1}BPELProcess1Binding" soapVersion="1_1" anonymous="optional" definition="http://lin35003515.corp.capgemini.com:7007/soa-infra/services/default/Add_Proj/bpelprocess1_client_ep?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://lin35003515.corp.capgemini.com:7007/soa-infra/services/default/Add_Proj/bpelprocess1_client_ep?WSDL"><con:part><con:url>http://lin35003515.corp.capgemini.com:7007/soa-infra/services/default/Add_Proj/bpelprocess1_client_ep?WSDL</con:url><con:content><![CDATA[<wsdl:definitions name="BPELProcess1" targetNamespace="http://xmlns.oracle.com/SOA_DevOpp_App/Add_Proj/BPELProcess1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:client="http://xmlns.oracle.com/SOA_DevOpp_App/Add_Proj/BPELProcess1" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:documentation>
+    <abstractWSDL>http://LIN35003515.corp.capgemini.com:7007/soa-infra/services/default/Add_Proj!1.0-SNAPSHOT/WSDLs/BPELProcess1.wsdl</abstractWSDL>
+  </wsdl:documentation>
+  <plnk:partnerLinkType name="BPELProcess1">
+    <plnk:role name="BPELProcess1Provider" portType="client:BPELProcess1"/>
+  </plnk:partnerLinkType>
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+      <import namespace="http://xmlns.oracle.com/SOA_DevOpp_App/Add_Proj/BPELProcess1" schemaLocation="http://lin35003515.corp.capgemini.com:7007/soa-infra/services/default/Add_Proj/bpelprocess1_client_ep?XSD=../Schemas/BPELProcess1.xsd"/>
+    </schema>
+  </wsdl:types>
+  <wsdl:message name="BPELProcess1RequestMessage">
+    <wsdl:part name="payload" element="client:process"/>
+  </wsdl:message>
+  <wsdl:message name="BPELProcess1ResponseMessage">
+    <wsdl:part name="payload" element="client:processResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="BPELProcess1">
+    <wsdl:operation name="process">
+      <wsdl:input message="client:BPELProcess1RequestMessage"/>
+      <wsdl:output message="client:BPELProcess1ResponseMessage"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BPELProcess1Binding" type="client:BPELProcess1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="process">
+      <soap:operation style="document" soapAction="process"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="bpelprocess1_client_ep">
+    <wsdl:port name="BPELProcess1_pt" binding="client:BPELProcess1Binding">
+      <soap:address location="http://lin35003515.corp.capgemini.com:7007/soa-infra/services/default/Add_Proj/bpelprocess1_client_ep"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>http://lin35003515.corp.capgemini.com:7007/soa-infra/services/default/Add_Proj/bpelprocess1_client_ep?XSD=../Schemas/BPELProcess1.xsd</con:url><con:content><![CDATA[<schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://xmlns.oracle.com/SOA_DevOpp_App/Add_Proj/BPELProcess1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <element name="process">
+    <complexType>
+      <sequence>
+        <element name="a" type="string"/>
+        <element name="b" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+  <element name="processResponse">
+    <complexType>
+      <sequence>
+        <element name="result" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+</schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://lin35003515.corp.capgemini.com:7007/soa-infra/services/default/Add_Proj/bpelprocess1_client_ep</con:endpoint></con:endpoints><con:operation id="2fd40f6a-7ff8-400c-9983-3a4caceea5ef" isOneWay="false" action="process" name="process" bindingOperationName="process" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="9d6d02a4-9401-4d7d-8e08-96cfcbfbbdfd" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://lin35003515.corp.capgemini.com:7007/soa-infra/services/default/Add_Proj/bpelprocess1_client_ep</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:bpel="http://xmlns.oracle.com/SOA_DevOpp_App/Add_Proj/BPELProcess1">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <bpel:process>\r
+         <bpel:a>3</bpel:a>\r
+         <bpel:b>2</bpel:b>\r
+      </bpel:process>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="process"/><con:wsrmConfig version="1.2"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

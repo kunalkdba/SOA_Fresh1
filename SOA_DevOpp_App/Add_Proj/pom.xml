@@ -127,9 +127,9 @@
     <artifactId>soapui-maven-plugin</artifactId>
     <version>5.2.0</version>
     <configuration>
-         <projectFile>D:\DevOps\SOA\SoapUI-5.4.0\Projects\SOA-DevOps-Add-Proj-soapui-project.xml</projectFile>
+         <projectFile>${basedir}/SOA/testsuites/SOA-DevOps-Add-Proj-soapui-project.xml</projectFile>
          <junitreport>true</junitreport>
-         <outputFolder>D:\DevOps\SOA</outputFolder>
+         <outputFolder>${basedir}/target/junit-reports</outputFolder>
      </configuration>
     <executions>
         <execution>
