@@ -6,7 +6,12 @@
   <artifactId>Add_Proj</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>sar</packaging>
-  
+  <pluginRepositories>
+        <pluginRepository>
+            <id>SmartBearPluginRepository</id>
+            <url>http://www.soapui.org/repository/maven2/</url>
+        </pluginRepository>
+    </pluginRepositories>
   <!--
            This POM was generated from the SOA Maven Archetype.
            Comments in this POM guide you how to use it with your project.
