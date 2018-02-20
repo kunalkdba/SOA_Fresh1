@@ -39,9 +39,9 @@
     <composite.name>${project.artifactId}</composite.name>
     <composite.revision>${project.version}</composite.revision>
     <composite.partition>default</composite.partition>
-    <serverUrl>http://localhost:7007</serverUrl>
+    <serverUrl>http://129.144.6.165:7002</serverUrl>
     <user>weblogic</user>
-    <password>welcome1</password>
+    <password>Log1cw3b</password>
     <overwrite>true</overwrite>
     <forceDefault>true</forceDefault>
     <regenerateRulebase>false</regenerateRulebase>
